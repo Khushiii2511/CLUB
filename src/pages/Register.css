@@ -1,0 +1,134 @@
+/* src/pages/Register.css */
+
+/* Note: Since Register.jsx uses the exact same class names as Login.jsx, 
+   we can reuse the same beautiful styles! */
+
+/* ========================================= */
+/* 1. Base & Background (Consistent Look) */
+/* ========================================= */
+
+.auth-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    
+    /* Subtle background gradient for a soft look */
+    background: linear-gradient(135deg, #e6e6fa 0%, #f0e6ff 100%); /* Soft purple tones */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========================================= */
+/* 2. Authentication Card */
+/* ========================================= */
+
+.auth-card-container {
+    background: #ffffff;
+    padding: 40px 50px; 
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px; /* Slightly wider for the extra fields */
+    text-align: center;
+}
+
+.auth-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* ========================================= */
+/* 3. Form Inputs */
+/* ========================================= */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; 
+}
+
+.form-input::placeholder {
+    color: #aaa;
+}
+
+.form-input:focus {
+    border-color: #a8a8ff;
+    box-shadow: 0 0 0 3px rgba(168, 168, 255, 0.3);
+    outline: none;
+}
+
+/* ========================================= */
+/* 4. Gradient Button */
+/* ========================================= */
+
+.gradient-button {
+    /* Key Gradient Style: Pink to Purple */
+    background: linear-gradient(90deg, #ff6b81 0%, #a878ff 100%); 
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.1s;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(168, 120, 255, 0.4);
+}
+
+.gradient-button:hover:not(:disabled) {
+    opacity: 0.9;
+    box-shadow: 0 6px 20px rgba(168, 120, 255, 0.6);
+}
+
+.gradient-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* ========================================= */
+/* 5. Footer and Error Styles */
+/* ========================================= */
+
+.auth-footer-text {
+    margin-top: 25px;
+    color: #777;
+    font-size: 0.95em;
+}
+
+.auth-register-link {
+    color: #a878ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.auth-register-link:hover {
+    color: #ff6b81;
+    text-decoration: underline;
+}
+
+.auth-error-message {
+    color: #d9534f;
+    background-color: #fceae9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d9534f;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
