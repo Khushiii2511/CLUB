@@ -10,7 +10,7 @@ Features
   
  Deployment
 The application is deployed live on Vercel.
-**Deployed URL:** `[INSERT YOUR VERCELL DEPLOYMENT URL HERE]`
+**Deployed URL:** club-k47flttej-khushi-kapoors-projects.vercel.app
 
 Local Setup and Installation
 Follow these steps to get a local copy of the project running on your machine.
